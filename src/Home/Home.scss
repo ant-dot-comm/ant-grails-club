@@ -1,0 +1,50 @@
+.selection-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.selection {
+    height: 125px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (min-width: 767px) {
+    .selection-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .selection {
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .selection-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.selection-j4 { background-image: url('../../public/images/j4dark.jpg'); }
+.selection-j4:hover { background-image: url('../../public/images/j4light.jpg'); }
+
+.selection-j7 { background-image: url('../../public/images/j7dark.jpg'); }
+.selection-j7:hover { background-image: url('../../public/images/j7light.jpg'); }
+
+.selection-j9 { background-image: url('../../public/images/j9dark.jpg'); }
+.selection-j9:hover { background-image: url('../../public/images/j9light.jpg'); }
+
+.selection-j11 { background-image: url('../../public/images/j11dark.jpg'); }
+.selection-j11:hover { background-image: url('../../public/images/j11light.jpg'); }
+
+.selection-j12 { background-image: url('../../public/images/j12dark.jpg'); }
+.selection-j12:hover { background-image: url('../../public/images/j12light.jpg'); }
+
+.selection-bat { background-image: url('../../public/images/bat1dark.jpg'); }
+.selection-bat:hover { background-image: url('../../public/images/bat1light.jpg'); }
+
+.selection-am95 { background-image: url('../../public/images/am95dark.jpg'); }
+.selection-am95:hover { background-image: url('../../public/images/am95light.jpg'); }
+
+.selection-shox { background-image: url('../../public/images/shoxdark.jpg'); }
+.selection-shox:hover { background-image: url('../../public/images/shoxlight.jpg'); }

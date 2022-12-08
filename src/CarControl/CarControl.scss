@@ -1,0 +1,54 @@
+.toggle-container {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    border-top-right-radius: 2rem;
+    display: flex;
+    gap: .5rem;
+    height: 98px;
+    position: fixed;
+    padding-left: 1.5rem;
+    width: max-content;
+    z-index: 10;
+}
+
+.motion-toggle {
+    background-color: transparent;
+    border: 1px solid #666666;
+    border-radius: 1rem;
+    height: 2rem;
+    position: relative;
+    width: 4rem;
+}
+
+.motion-toggle::after {
+    background-color: #666666;
+    border-radius: 50%;
+    content: "";
+    height: 1.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5rem;
+}
+
+.motion-toggle--off::after {
+    left: .25rem;
+}
+
+.motion-toggle--on::after {
+    right: .25rem;
+}
+
+.color-option-button {
+    background-color: transparent;
+    border: none;
+    height: 32px;
+    padding: 0;
+}
+.color-option-button--next {
+    transform: rotate(180deg);
+}
+.color-option-button:disabled {
+    opacity: .5;
+}

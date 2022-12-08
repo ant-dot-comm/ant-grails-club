@@ -1,0 +1,26 @@
+$breakpoints: (
+  'small':  767px,
+  'medium': 992px,
+  'large':  1200px
+) !default;
+
+@mixin breakpoint($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+      @media (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+      }
+    }
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+.ml {
+  margin-left: 1rem;
+}
