@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/ant-grails-club/static/css/main.c2ce22d8.css",
+    "main.js": "/ant-grails-club/static/js/main.8b49a73c.js",
+    "static/media/j11light.jpg": "/ant-grails-club/static/media/j11light.d67f3580f9e0f1f33524.jpg",
+    "static/media/bat1light.jpg": "/ant-grails-club/static/media/bat1light.3e06126e49b79fa35f08.jpg",
+    "static/media/shoxlight.jpg": "/ant-grails-club/static/media/shoxlight.013fbde8269c8984bcfb.jpg",
+    "static/media/j7light.jpg": "/ant-grails-club/static/media/j7light.1e70e18bf457f74205a0.jpg",
+    "static/media/am95light.jpg": "/ant-grails-club/static/media/am95light.c1fb586ac9bcf1fe298a.jpg",
+    "static/media/j9light.jpg": "/ant-grails-club/static/media/j9light.333788c72e1e69dcd94c.jpg",
+    "static/media/j4light.jpg": "/ant-grails-club/static/media/j4light.f85447d355c5a40ddaf1.jpg",
+    "static/media/j12light.jpg": "/ant-grails-club/static/media/j12light.deb02220b29b9a96595c.jpg",
+    "static/media/j9dark.jpg": "/ant-grails-club/static/media/j9dark.d0574e909b5487dcf439.jpg",
+    "static/media/shoxdark.jpg": "/ant-grails-club/static/media/shoxdark.8f8b1498569bc152c4d2.jpg",
+    "static/media/j7dark.jpg": "/ant-grails-club/static/media/j7dark.b021fb95e8929ddc5ff8.jpg",
+    "static/media/j4dark.jpg": "/ant-grails-club/static/media/j4dark.12defaf8fbe27b370616.jpg",
+    "static/media/j11dark.jpg": "/ant-grails-club/static/media/j11dark.742f664e58c4e652a3e0.jpg",
+    "static/media/am95dark.jpg": "/ant-grails-club/static/media/am95dark.a1a9b6b253a88ca62be8.jpg",
+    "static/media/j12dark.jpg": "/ant-grails-club/static/media/j12dark.26cd791c85f2c10018d5.jpg",
+    "static/media/bat1dark.jpg": "/ant-grails-club/static/media/bat1dark.ba6eafde9538e02cfa99.jpg",
+    "index.html": "/ant-grails-club/index.html",
+    "main.c2ce22d8.css.map": "/ant-grails-club/static/css/main.c2ce22d8.css.map",
+    "main.8b49a73c.js.map": "/ant-grails-club/static/js/main.8b49a73c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2ce22d8.css",
+    "static/js/main.8b49a73c.js"
+  ]
+}
