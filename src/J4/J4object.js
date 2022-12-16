@@ -10,7 +10,7 @@ export function J4(props) {
 
     const gltf = useLoader(
         GLTFLoader,
-        process.env.PUBLIC_URL + "models/J4/J4object.gltf"
+        process.env.PUBLIC_URL + "/models/J4/J4object.gltf"
     );
   
     useEffect(() => {

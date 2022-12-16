@@ -6,7 +6,7 @@ import { Mesh } from "three";
 export function B1() {    
     const gltf = useLoader(
         GLTFLoader,
-        process.env.PUBLIC_URL + "models/BatWheels/bat1.gltf"
+        process.env.PUBLIC_URL + "/models/BatWheels/bat1.gltf"
     );
   
     useEffect(() => {

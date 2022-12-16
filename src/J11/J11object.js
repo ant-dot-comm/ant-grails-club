@@ -10,7 +10,7 @@ export function J11(props) {
 
     const gltf = useLoader(
         GLTFLoader,
-        process.env.PUBLIC_URL + "models/J11/J11object.gltf"
+        process.env.PUBLIC_URL + "/models/J11/J11object.gltf"
     );
   
     useEffect(() => {

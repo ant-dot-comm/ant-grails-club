@@ -6,7 +6,7 @@ import { Mesh } from "three";
 export function Shox() {
     const gltf = useLoader(
         GLTFLoader,
-        process.env.PUBLIC_URL + "models/Shox/shox.gltf"
+        process.env.PUBLIC_URL + "/models/Shox/shox.gltf"
     );
   
     useEffect(() => {

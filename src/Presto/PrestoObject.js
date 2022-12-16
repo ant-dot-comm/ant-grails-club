@@ -6,7 +6,7 @@ import { Mesh } from "three";
 export function Presto() {
     const gltf = useLoader(
         GLTFLoader,
-        process.env.PUBLIC_URL + "models/Presto/presto.gltf"
+        process.env.PUBLIC_URL + "/models/Presto/presto.gltf"
     );
   
     useEffect(() => {

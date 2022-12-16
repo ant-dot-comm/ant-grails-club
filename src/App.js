@@ -34,9 +34,9 @@ function App() {
               {"flex-center" : !isHome}
             )
           }>
-          <img className='logo' alt="home" src="./images/logo@2x.png"/>
+          <img className='logo' alt="home" src={`${process.env.PUBLIC_URL + "/images/logo@2x.png"}`} />
           {!isHome && (
-            <img className="rotation ml" alt="360" src="./images/360.svg"/>
+            <img className="rotation ml" alt="360" src={`${process.env.PUBLIC_URL + "/images/360.svg"}`} />
           )}
         </NavLink>
 

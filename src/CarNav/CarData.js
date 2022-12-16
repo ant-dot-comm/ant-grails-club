@@ -1,7 +1,7 @@
 export const carData = [
     { 
       to: "/J4", 
-      img: "./images/j4button.png",
+      img: `${process.env.PUBLIC_URL + "/images/j4button.png"}`,
       options: [
         "j4og",
         "j4black",
@@ -11,7 +11,7 @@ export const carData = [
     },
     {
       to: "/J7",
-      img: "./images/j7button.png",
+      img: `${process.env.PUBLIC_URL + "/images/j7button.png"}`,
       options: [
         "j7og",
         "j7french",
@@ -21,7 +21,7 @@ export const carData = [
     },
     {
       to: "/J9",
-      img: "./images/j9button.png",
+      img: `${process.env.PUBLIC_URL + "/images/j9button.png"}`,
       options: [
         "j9og",
         "j9flint",
@@ -35,7 +35,7 @@ export const carData = [
     },
     {
       to: "/J11",
-      img: "./images/j11button.png",
+      img: `${process.env.PUBLIC_URL + "/images/j11button.png"}`,
       options: [
         "j11og",
         "j11gray",
@@ -47,7 +47,7 @@ export const carData = [
     },
     {
       to: "/J12",
-      img: "./images/j12button.png",
+      img: `${process.env.PUBLIC_URL + "/images/j12button.png"}`,
       options: [
         "j12og",
         "j12blue",
@@ -56,8 +56,8 @@ export const carData = [
         "j12nubuck",
       ]
     },
-    { to: "/B1", img: "./images/bat1button.png", options: [] },
-    { to: "/Shox", img: "./images/shoxbutton.png", options: [] },
-    { to: "/Presto", img: "./images/prestobutton.png", options: [] },
-    { to: "/AM95", img: "./images/am95button.png", options: [] },
+    { to: "/B1", img: `${process.env.PUBLIC_URL + "/images/bat1button.png"}`, options: [] },
+    { to: "/Shox", img: `${process.env.PUBLIC_URL + "/images/shoxbutton.png"}`, options: [] },
+    { to: "/Presto", img: `${process.env.PUBLIC_URL + "/images/prestobutton.png"}`, options: [] },
+    { to: "/AM95", img: `${process.env.PUBLIC_URL + "/images/am95button.png"}`, options: [] },
   ]

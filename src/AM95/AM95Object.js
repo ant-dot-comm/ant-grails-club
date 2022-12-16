@@ -6,7 +6,7 @@ import { Mesh } from "three";
 export function AM95() {
     const gltf = useLoader(
         GLTFLoader,
-        process.env.PUBLIC_URL + "models/AM95/am95.gltf"
+        process.env.PUBLIC_URL + "/models/AM95/am95.gltf"
     );
   
     useEffect(() => {
