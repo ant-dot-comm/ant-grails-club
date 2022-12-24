@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ant-grails-club/static/css/main.c2ce22d8.css",
-    "main.js": "/ant-grails-club/static/js/main.a09a9ebc.js",
+    "main.css": "/ant-grails-club/static/css/main.df7e7f03.css",
+    "main.js": "/ant-grails-club/static/js/main.9628437e.js",
     "static/media/j11light.jpg": "/ant-grails-club/static/media/j11light.d67f3580f9e0f1f33524.jpg",
     "static/media/bat1light.jpg": "/ant-grails-club/static/media/bat1light.3e06126e49b79fa35f08.jpg",
     "static/media/shoxlight.jpg": "/ant-grails-club/static/media/shoxlight.013fbde8269c8984bcfb.jpg",
@@ -19,11 +19,11 @@
     "static/media/j12dark.jpg": "/ant-grails-club/static/media/j12dark.26cd791c85f2c10018d5.jpg",
     "static/media/bat1dark.jpg": "/ant-grails-club/static/media/bat1dark.ba6eafde9538e02cfa99.jpg",
     "index.html": "/ant-grails-club/index.html",
-    "main.c2ce22d8.css.map": "/ant-grails-club/static/css/main.c2ce22d8.css.map",
-    "main.a09a9ebc.js.map": "/ant-grails-club/static/js/main.a09a9ebc.js.map"
+    "main.df7e7f03.css.map": "/ant-grails-club/static/css/main.df7e7f03.css.map",
+    "main.9628437e.js.map": "/ant-grails-club/static/js/main.9628437e.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2ce22d8.css",
-    "static/js/main.a09a9ebc.js"
+    "static/css/main.df7e7f03.css",
+    "static/js/main.9628437e.js"
   ]
 }
