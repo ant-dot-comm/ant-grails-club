@@ -10,7 +10,7 @@ export function J4(props) {
 
     const gltf = useLoader(
         GLTFLoader,
-        process.env.PUBLIC_URL + "/models/J4/J4object.gltf"
+        process.env.PUBLIC_URL + "/models/J4/J4object4.gltf"
     );
   
     useEffect(() => {
@@ -37,6 +37,8 @@ export function J4(props) {
         const trimTopLeft = gltf.materials["j4 trim top left"]
         const trimMid = gltf.materials["j4 trim mid"]
         const trimSole = gltf.materials["j4 trim sole"]
+        const trimSoleBack = gltf.materials["j4 trim sole back"]
+        const trimTireWell = gltf.materials["j4 tire well"]
         const rim = gltf.materials["j7 rims"]
         const rimLogo = gltf.materials["j7 rims logo"]
 
@@ -49,6 +51,8 @@ export function J4(props) {
             trimTopLeft.color.setHex(0xffffff)
             trimMid.color.setHex(0xffffff)
             trimSole.color.setHex(0x333333)
+            trimSoleBack.color.setHex(0x333333)
+            trimTireWell.color.setHex(0x333333)
             rim.color.setHex(0xdddddd)
             rimLogo.color.setHex(0x56A7E7)
         } else if (vehicleData.color === "j4black") {
@@ -60,17 +64,21 @@ export function J4(props) {
             trimTopLeft.color.setHex(0x333333)
             trimMid.color.setHex(0xffffff)
             trimSole.color.setHex(0x666666)
+            trimSoleBack.color.setHex(0xDC0500)
+            trimTireWell.color.setHex(0x333333)
             rim.color.setHex(0xDC0500)
             rimLogo.color.setHex(0x333333)
         } else if (vehicleData.color === "j4white") {
             base.color.setHex(0xdddddd)
             accent1.color.setHex(0x333333)
             accent2.color.setHex(0xffffff)
-            accent3.color.setHex(0xdddddd)
-            trimTop.color.setHex(0xdddddd)
-            trimTopLeft.color.setHex(0xdddddd)
+            accent3.color.setHex(0xaaaaaa)
+            trimTop.color.setHex(0xaaaaaa)
+            trimTopLeft.color.setHex(0xaaaaaa)
             trimMid.color.setHex(0xffffff)
             trimSole.color.setHex(0x333333)
+            trimSoleBack.color.setHex(0xaaaaaa)
+            trimTireWell.color.setHex(0xffffff)
             rim.color.setHex(0xdddddd)
             rimLogo.color.setHex(0xdddddd)
         } else if (vehicleData.color === "j4red") {
@@ -80,10 +88,25 @@ export function J4(props) {
             accent3.color.setHex(0x333333)
             trimTop.color.setHex(0x333333)
             trimTopLeft.color.setHex(0x333333)
-            trimMid.color.setHex(0xdddddd)
-            trimSole.color.setHex(0xdddddd)
+            trimMid.color.setHex(0xffffff)
+            trimSole.color.setHex(0xffffff)
+            trimSoleBack.color.setHex(0x777777)
+            trimTireWell.color.setHex(0xDC0500)
             rim.color.setHex(0xdddddd)
             rimLogo.color.setHex(0xDC0500)
+        } else if (vehicleData.color === "j4eastside") {
+            base.color.setHex(0xffffff)
+            accent1.color.setHex(0xd4af37)
+            accent2.color.setHex(0xdddddd)
+            accent3.color.setHex(0x999999)
+            trimTop.color.setHex(0x999999)
+            trimTopLeft.color.setHex(0x999999)
+            trimMid.color.setHex(0xdddddd)
+            trimSole.color.setHex(0x1D2354)
+            trimSoleBack.color.setHex(0xF2D577)
+            trimTireWell.color.setHex(0xffffff)
+            rim.color.setHex(0xdddddd)
+            rimLogo.color.setHex(0xd4af37)
         }
     }, [gltf, vehicleData.color]);
 

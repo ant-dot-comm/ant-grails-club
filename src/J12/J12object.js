@@ -10,7 +10,7 @@ export function J12(props) {
 
     const gltf = useLoader(
         GLTFLoader,
-        process.env.PUBLIC_URL + "models/J12/J12object.gltf"
+        process.env.PUBLIC_URL + "/models/J12/J12object1.gltf"
     );
   
     useEffect(() => {
@@ -31,6 +31,8 @@ export function J12(props) {
         const trim3 = gltf.materials["j12trim3"]
         const trim4 = gltf.materials["j12trim4"]
         const trim5 = gltf.materials["j12trim5"]
+        const rim = gltf.materials["j12 rims"]
+        const rimLogo = gltf.materials["j12 rims logo"]
         
         if (vehicleData.color === "j12og") {
             base.color.setHex(0x000000)
@@ -40,6 +42,8 @@ export function J12(props) {
             trim3.color.setHex(0x970009)
             trim4.color.setHex(0x970009)
             trim5.color.setHex(0x970009)
+            rim.color.setHex(0x333333)
+            rimLogo.color.setHex(0x333333)
         } else if (vehicleData.color === "j12blue") {
             base.color.setHex(0xffffff)
             sole.color.setHex(0x000000)
@@ -48,6 +52,8 @@ export function J12(props) {
             trim3.color.setHex(0x999999)
             trim4.color.setHex(0x284DC1)
             trim5.color.setHex(0x284DC1)
+            rim.color.setHex(0xffffff)
+            rimLogo.color.setHex(0x284DC1)
         } else if (vehicleData.color === "j12blackwhite") {
             base.color.setHex(0xffffff)
             sole.color.setHex(0x000000)
@@ -56,6 +62,8 @@ export function J12(props) {
             trim3.color.setHex(0x333333)
             trim4.color.setHex(0x333333)
             trim5.color.setHex(0x333333)
+            rim.color.setHex(0x333333)
+            rimLogo.color.setHex(0x333333)
         } else if (vehicleData.color === "j12red") {
             base.color.setHex(0xffffff)
             sole.color.setHex(0x000000)
@@ -64,6 +72,8 @@ export function J12(props) {
             trim3.color.setHex(0x970009)
             trim4.color.setHex(0x970009)
             trim5.color.setHex(0x970009)
+            rim.color.setHex(0x333333)
+            rimLogo.color.setHex(0x970009)
         } else if (vehicleData.color === "j12nubuck") {
             base.color.setHex(0x333333)
             sole.color.setHex(0x333333)
@@ -72,6 +82,18 @@ export function J12(props) {
             trim3.color.setHex(0x0081d1)
             trim4.color.setHex(0x333333)
             trim5.color.setHex(0x333333)
+            rim.color.setHex(0x333333)
+            rimLogo.color.setHex(0x333333)
+        } else if (vehicleData.color === "j12eastside") {
+            base.color.setHex(0xF3CC8F)
+            sole.color.setHex(0xD36819)
+            trim1.color.setHex(0xD36819)
+            trim2.color.setHex(0xD36819)
+            trim3.color.setHex(0xF3CC8F)
+            trim4.color.setHex(0xD36819)
+            trim5.color.setHex(0xD36819)
+            rim.color.setHex(0xF3CC8F)
+            rimLogo.color.setHex(0xD36819)
         }
     }, [gltf, vehicleData.color]);
 

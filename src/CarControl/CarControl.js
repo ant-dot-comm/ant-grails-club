@@ -5,17 +5,18 @@ import VehicleContext from "../vehicleContext"
 
 function CarControl(props) {
   const {
-    // hasMotion,
+    hasMotion,
     currentPath
    } = props;
 
-  const { vehicleMotion, changeColor } = useContext(VehicleContext)
-  // const [ toggleMotion, setToggleMotion ] = useState(false)
-  const [ color, setColor ] = useState(0)
+  const { setMotion, setColor } = useContext(VehicleContext)
+  const [ toggleMotion, setToggleMotion ] = useState(false)
+  const [ colorOption, setColorOption ] = useState(0)
+  console.log({colorOption})
   
-  // useEffect(() => {
-  //   vehicleMotion(toggleMotion)
-  // }, [toggleMotion]);
+  useEffect(() => {
+    setMotion(toggleMotion)
+  }, [toggleMotion]);
   
   function filterByPath(item) {
     if (item.to === currentPath) {
@@ -26,15 +27,18 @@ function CarControl(props) {
     }
   }
   
-  const carPathData = carData.filter(filterByPath)
-  const carPathDataOptions = carPathData[0].options
-  const carPathDataOptionCount = carPathDataOptions.length - 1
+  const carPathData = carData.filter(filterByPath) // Get current car data
+  const carPathDataOptions = carPathData[0].options // Get current car color options
+  const carPathDataOptionCount = carPathDataOptions.length - 1 // Get count
   
   useEffect(() => {
-    changeColor(carPathDataOptions[color])
-  }, [color]);
+    setColor(carPathDataOptions[colorOption])
+  }, [colorOption]);
 
-  console.log({color})
+  useEffect(() => {
+    setColorOption(0)
+    setMotion(false)
+  }, [currentPath]);
 
   const caret = (
     <svg width="32px" height="32px" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
@@ -45,14 +49,14 @@ function CarControl(props) {
   return (
     <>
       <div className="toggle-container">
-        {/* {hasMotion && (
+        {hasMotion && (
           <button className={`motion-toggle ${toggleMotion ? "motion-toggle--on" : "motion-toggle--off"}`} onClick={( () => setToggleMotion(!toggleMotion) )} />
-        )} */}
+        )}
         {carPathDataOptions && (
           <button 
             className="color-option-button"
-            disabled={color <= 0} 
-            onClick={() => setColor(prevCount => prevCount - 1)}
+            disabled={colorOption <= 0} 
+            onClick={() => setColorOption(prevCount => prevCount - 1)}
           >
             {caret}
           </button>
@@ -60,8 +64,8 @@ function CarControl(props) {
         {carPathDataOptions && (
           <button 
             className="color-option-button color-option-button--next"
-            disabled={color >= carPathDataOptionCount} 
-            onClick={() => setColor(prevCount => prevCount + 1)}
+            disabled={colorOption >= carPathDataOptionCount} 
+            onClick={() => setColorOption(prevCount => prevCount + 1)}
           >
             {caret}
           </button>

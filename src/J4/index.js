@@ -7,7 +7,9 @@ import Loader from "../Loader/Loader"
 import { J4 } from './J4object';
 
 function J4page() {
+  
   const vehicleContextData = useContext(VehicleContext)
+  // console.log({vehicleContextData})
   const [vehicleData, setVehicleData] = useState(vehicleContextData)
 
   useEffect(() => {

@@ -6,16 +6,8 @@ export function VehicleProvider({children}) {
     const [color, setColor] = useState('')
     const [motion, setMotion] = useState(false)
 
-    const changeColor = (color) => {
-        setColor(color)
-    }
-
-    const vehicleMotion = (hasMotion) => {
-        setMotion(hasMotion)
-    }
-
     return (
-        <VehicleContext.Provider value={{color, changeColor, motion, vehicleMotion}}>
+        <VehicleContext.Provider value={{color, setColor, motion, setMotion}}>
             {children}
         </VehicleContext.Provider>
     )

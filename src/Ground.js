@@ -11,29 +11,29 @@ export function Ground(props) {
   // console.log("Ground", hasMotion)
 
   // thanks to https://polyhaven.com/a/rough_plasterbrick_05 !
-  const [roughness, normal] = useLoader(TextureLoader, [
-    process.env.PUBLIC_URL + "textures/terrain-roughness.jpeg",
-    process.env.PUBLIC_URL + "textures/terrain-normal.jpeg",
-  ]);
+  // const [roughness, normal] = useLoader(TextureLoader, [
+  //   process.env.PUBLIC_URL + "/textures/terrain-roughness.jpeg",
+  //   process.env.PUBLIC_URL + "/textures/terrain-normal.jpeg",
+  // ]);
 
-  useEffect(() => {
-    [normal, roughness].forEach((t) => {
-      t.wrapS = RepeatWrapping;
-      t.wrapT = RepeatWrapping;
-      t.repeat.set(5, 5);
-      t.offset.set(0, 0);
-    });
+  // useEffect(() => {
+  //   [normal, roughness].forEach((t) => {
+  //     t.wrapS = RepeatWrapping;
+  //     t.wrapT = RepeatWrapping;
+  //     t.repeat.set(5, 5);
+  //     t.offset.set(0, 0);
+  //   });
 
-    normal.encoding = LinearEncoding;
-  }, [normal, roughness]);
+  //   normal.encoding = LinearEncoding;
+  // }, [normal, roughness]);
 
-  useFrame((state, delta) => {
-      if (hasMotion) {
-        let t = -state.clock.getElapsedTime() * 0.128;
-        roughness.offset.set(0, t % 1);
-        normal.offset.set(0, t % 1);
-      }
-  });
+  // useFrame((state, delta) => {
+  //     if (hasMotion) {
+  //       let t = -state.clock.getElapsedTime() * 0.128;
+  //       roughness.offset.set(0, t % 1);
+  //       normal.offset.set(0, t % 1);
+  //     }
+  // });
 
 
   return (
@@ -41,9 +41,9 @@ export function Ground(props) {
       <planeGeometry args={[30, 30]} />
       <MeshReflectorMaterial
         envMapIntensity={0}
-        normalMap={normal}
+        // normalMap={normal}
         normalScale={[0.15, 0.15]}
-        roughnessMap={roughness}
+        // roughnessMap={roughness}
         dithering={true}
         color={[0.015, 0.015, 0.015]}
         roughness={1.5}

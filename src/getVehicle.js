@@ -10,7 +10,7 @@ import {
 } from "@react-three/postprocessing";
 import { BlendFunction } from "postprocessing";
 
-// import { Ground } from './Ground'; 
+import { Ground } from './Ground'; 
 // import { Effects } from './Effects';
 
 RectAreaLightUniformsLib.init();
@@ -18,7 +18,7 @@ RectAreaLightUniformsLib.init();
 function Vehicle(props) {
   const {
     children,
-    // motion,
+    motion,
   } = props
 
   return (
@@ -61,7 +61,7 @@ function Vehicle(props) {
 
       {children}
 
-      {/* <Ground hasMotion={motion} /> */}
+      <Ground hasMotion={motion} />
 
       <EffectComposer>
         {/* <DepthOfField focusDistance={0.0035} focalLength={0.01} bokehScale={3} height={480} /> */}

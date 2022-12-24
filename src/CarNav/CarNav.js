@@ -6,7 +6,7 @@ import { carData } from "./CarData"
 
 function CarNav() {
   const [opened, setIsOpened] = useState(false)
-  const { changeColor } = useContext(VehicleContext)
+  const { setColor } = useContext(VehicleContext)
 
 
   useEffect(() => {
@@ -42,7 +42,7 @@ function CarNav() {
               carData && carData.map((data, key)=>{   
                 return (
                     <li key={key} className='nav-vehicle-option' style={{ transitionDelay: `${key}00ms` }}>
-                      <NavLink className={({ isActive }) => NavLinkClasses(isActive)} to={data.to} onClick={() => changeColor(0)}>
+                      <NavLink className={({ isActive }) => NavLinkClasses(isActive)} to={data.to} onClick={() => setColor('')}>
                         <img className='nav-vehicle-button-img' alt="" src={data.img} />
                       </NavLink>
                     </li>

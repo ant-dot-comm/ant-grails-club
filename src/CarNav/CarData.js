@@ -7,6 +7,7 @@ export const carData = [
         "j4black",
         "j4white",
         "j4red",
+        "j4eastside",
       ]
     },
     {
@@ -54,6 +55,7 @@ export const carData = [
         "j12blackwhite",
         "j12red",
         "j12nubuck",
+        "j12eastside",
       ]
     },
     { to: "/B1", img: `${process.env.PUBLIC_URL + "/images/bat1button.png"}`, options: [] },
