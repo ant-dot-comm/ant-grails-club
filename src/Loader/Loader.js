@@ -5,8 +5,8 @@ export default function Loader() {
     const [messageIndex, setMessageIndex] = useState(0)
 
     useEffect(() => {
-        const number = 0 + (Math.random() * (4))
-        const interval = setInterval(() =>  setMessageIndex(0 + (Math.round(number))), 2000);
+        const number = 0 + (Math.random() * (5))
+        const interval = setInterval(() =>  setMessageIndex(0 + (Math.round(number))), 3000);
         return () => clearInterval(interval);
     }, [messageIndex]);
 
