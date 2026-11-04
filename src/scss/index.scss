@@ -1,12 +1,13 @@
-@import "../CarNav/CarNav.scss";
-@import "../CarControl/CarControl.scss";
-@import "../Loader/Loader.scss";
-@import "../Home/Home.scss";
-@import "_helpers.scss";
+@use "../CarNav/CarNav";
+@use "../CarControl/CarControl";
+@use "../Loader/Loader";
+@use "../Home/Home";
+@use "helpers";
 
 
 html, body, #root, canvas {
     background-color: #000000;
+    overscroll-behavior-x: none; // sideways trackpad swipes spin the car instead of going back a page
     height: 100%;
     margin: 0;
     width: 100%;

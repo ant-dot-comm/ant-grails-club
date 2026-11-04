@@ -1,45 +1,35 @@
 {
   "homepage": "http://ant-dot-comm.github.io/ant-grails-club",
   "name": "carprojects",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
-  "dependencies": {
-    "@react-three/drei": "^9.29.1",
-    "@react-three/fiber": "^8.7.2",
-    "@react-three/postprocessing": "^2.6.2",
-    "ajv": "^8.11.0",
-    "canvas-sketch-util": "^1.10.0",
-    "classnames": "^2.3.2",
-    "react": "^18.2.0",
-    "react-device-detect": "^2.2.2",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.1",
-    "react-scripts": "5.0.1",
-    "sass": "^1.56.0",
-    "three": "^0.144.0",
-    "typescript": "^4.8.3"
-  },
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "models": "node scripts/optimize-models.mjs",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "deploy": "gh-pages -d dist"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.2",
+    "@react-three/postprocessing": "^3.2.2",
+    "classnames": "^2.5.1",
+    "postprocessing": "^6.39.6",
+    "react": "^19.3.1",
+    "react-device-detect": "^2.2.3",
+    "react-dom": "^19.3.1",
+    "react-router": "^8.5.1",
+    "three": "^0.187.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@gltf-transform/cli": "^4.5.1",
+    "@vitejs/plugin-react": "^6.2.1",
+    "gh-pages": "^6.3.0",
+    "sass": "^1.107.1",
+    "vite": "^8.3.5"
   }
 }

@@ -1,3 +1,13 @@
+.loader-overlay {
+    align-items: center;
+    color: #ffffff;
+    display: flex;
+    inset: 0;
+    justify-content: center;
+    pointer-events: none;
+    position: fixed;
+}
+
 .loader {
     display: flex;
     flex-direction: column;

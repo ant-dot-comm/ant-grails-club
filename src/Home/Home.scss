@@ -1,6 +1,7 @@
 .selection-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 380px);
+    justify-content: center;
 }
 
 .selection {
